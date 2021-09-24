@@ -19,6 +19,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
@@ -48,6 +52,7 @@ body {
     cursor: pointer;
     padding: 20px 45px;
     line-height: normal;
+    transition: all 0.2s linear;
     &-primary {
         color: white;
         background-color: $primary-color;
@@ -97,5 +102,41 @@ body {
             line-height: 1.5;
         }
         
+    }
+
+    &-caption-left:before {
+        transform: none;
+    }
+
+    &-caption-left:after {
+        display: none;
+    }
+
+    &-caption-left {
+        padding-left: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+.text {
+    font-weight: 300;
+    color: $gray;
+    line-height: 1.5;
+}
+.logo {
+    display: inline-block;
+    margin-right: 180px;
+
+}   
+
+.bg {
+    &-google {
+        background-color: #ff7978;
+    }
+    &-twitter {
+        background-color: #78afff;
+    }
+    &-instagram {
+        background-color: #fcba7e;
     }
 }
