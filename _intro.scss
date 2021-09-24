@@ -1,0 +1,17 @@
+.intro {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0px 0 160px 0;
+    &-desc {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    & > * {
+        width: 50%;
+    }
+    &-content {
+        padding-right: 130px;
+    }
+}

@@ -1,0 +1,39 @@
+.footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    &-heading {
+        flex: 400;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    &-link {
+        color: $gray-dark ;
+    }
+    &-link-item {
+        margin-bottom: 25px;
+    }
+    &-desc {
+        margin: 40px 0 50px;
+        max-width: 250px;
+
+    }
+}
+.social {
+    display: inline-flex;
+}
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 100rem;
+    color: white;
+}
+
+.social-link:not(:first-child) {
+    margin-left: 15px;
+}
+
